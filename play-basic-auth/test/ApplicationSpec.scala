@@ -28,15 +28,6 @@ class ApplicationSpec extends PlaySpec with OneAppPerTest {
       contentAsString(home) must include("Your new application is ready.")
     }
 
-    /*"render the index page with basic authentication" in {
-      val data = Seq("Username" -> "test@example.com", "Password" -> "test123456")
-      val home = route(app, FakeRequest(GET, "/withAuthentication", FakeHeaders(data), AnyContentAsEmpty)).get
-
-      status(home) mustBe OK
-      contentType(home) mustBe Some("text/html")
-      contentAsString(home) must include("Your new application is ready.")
-    }*/
-
   }
 
   "CountController" should {
